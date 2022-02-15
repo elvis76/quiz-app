@@ -1,38 +1,68 @@
-.App {
+/* ## Home */
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home h1 {
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home p {
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home .cta button {
+  padding: 15px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 5px 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.home .cta :first-child {
+  background-color: dodgerblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home .cta :last-child {
+  background-color: #000;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home .cta :hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* ## Quiz */
+
+.quiz {
+  padding: 20px 10%;
+}
+
+.quiz main ul {
+  margin: 20px 0;
+}
+
+.quiz main ul li {
+  list-style: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.quiz main li.selected {
+  border-color: mediumseagreen;
+  color: mediumseagreen;
 }
